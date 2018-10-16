@@ -65,9 +65,9 @@ android {
 
 dependencies {
     // base core
-    compile 'com.android.support:appcompat-v7:27.1.0'
+    api 'androidx.appcompat:appcompat:1.0.0'
 
     // Timber
     // https://github.com/JakeWharton/timber
-    provided 'com.jakewharton.timber:timber:4.7.0'
+    compileOnly 'com.jakewharton.timber:timber:4.7.1'
 }

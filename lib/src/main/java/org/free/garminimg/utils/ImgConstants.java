@@ -24,7 +24,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
-import android.support.v4.util.SparseArrayCompat;
+import androidx.collection.SparseArrayCompat;
 
 import org.free.garminimg.Label;
 import org.free.garminimg.UtilsGarminImg;
