@@ -139,8 +139,8 @@ public class MapDrawer implements TransformedMapListener {
 
 		// prepare label filter
 		this.labelFilter = new LabelDeClutteringFilter(g2, fontSize,
-				frontColor, Utils.getColorTransparent(Color.RED, 120), // Labels
-																				// (Points)
+				frontColor, // Labels
+				Utils.getColorTransparent(Color.RED, 120), // Points
                 Utils.getColorTransparent(Color.CYAN, 120), // Lines
                 Utils.getColorTransparent(Color.MAGENTA, 120)); // Polygons
 	}
