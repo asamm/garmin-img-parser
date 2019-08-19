@@ -40,9 +40,9 @@ public class ClippingMapListener implements TransformedMapListener {
 
 	private final TransformedMapListener next;
 
-	private int clippedLongitudes[] = new int[50];
+    private int[] clippedLongitudes = new int[50];
 
-	private int clippedLatitudes[] = new int[50];
+    private int[] clippedLatitudes = new int[50];
 
 	private int[] clippedLongitudes2 = new int[50];
 

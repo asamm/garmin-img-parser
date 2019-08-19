@@ -53,15 +53,15 @@ public class TreSubFile extends ImgSubFile {
 
 	private static int MAX_RESOLUTION = 24;
 
-	private int bitsPerCoords[] = { MAX_RESOLUTION, MAX_RESOLUTION,
-			MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION,
-			MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION,
-			MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION,
-			MAX_RESOLUTION, MAX_RESOLUTION };
+    private int[] bitsPerCoords = {MAX_RESOLUTION, MAX_RESOLUTION,
+            MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION,
+            MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION,
+            MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION, MAX_RESOLUTION,
+            MAX_RESOLUTION, MAX_RESOLUTION};
 
-	private boolean inheriteds[] = new boolean[16];
+    private boolean[] inheriteds = new boolean[16];
 
-	private boolean levelPresent[] = new boolean[16];
+    private boolean[] levelPresent = new boolean[16];
 
 	private long fullSurface;
 

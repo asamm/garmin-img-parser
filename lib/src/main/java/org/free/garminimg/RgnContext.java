@@ -23,9 +23,9 @@ class RgnContext {
 	
 	ImgSubFile.FileContext context = new ImgSubFile.FileContext();
 
-	int longs[] = new int[50];
+    int[] longs = new int[50];
 
-	int lats[] = new int[50];
+    int[] lats = new int[50];
 
 	public final void checkCoordsSize(int nbPoints) {
 		if (nbPoints >= longs.length) {
@@ -34,8 +34,8 @@ class RgnContext {
 		}
 	}
 
-	private static int[] increaseSize(int old[]) {
-		int result[] = new int[old.length * 2];
+	private static int[] increaseSize(int[] old) {
+        int[] result = new int[old.length * 2];
 		System.arraycopy(old, 0, result, 0, old.length);
 		return result;
 	}

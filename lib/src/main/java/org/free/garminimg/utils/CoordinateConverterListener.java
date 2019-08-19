@@ -31,9 +31,9 @@ public class CoordinateConverterListener<COORD> implements MapListener {
 
 	private TransformedMapListener listener;
 
-	private int xPoints[] = new int[50];
+	private int[] xPoints = new int[50];
 
-	private int yPoints[] = new int[50];
+	private int[] yPoints = new int[50];
 
 	private Point2D.Double tempXY = new Point2D.Double();
 

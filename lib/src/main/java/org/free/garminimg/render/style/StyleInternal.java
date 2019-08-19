@@ -938,18 +938,18 @@ public class StyleInternal {
 	
 	/**************************************************/
 	/*                 LINE PARAMETERS                */
-	/**************************************************/
-	
-	private static final float dashDots[] = {
-		UtilsGarminImg.getDpPixels(3.0f), UtilsGarminImg.getDpPixels(3.0f)};
-	private static final float dashTiny[] = { 
-		UtilsGarminImg.getDpPixels(5.0f), UtilsGarminImg.getDpPixels(2.0f)};
-	private static final float dashSmall[] = {
-		UtilsGarminImg.getDpPixels(5.0f), UtilsGarminImg.getDpPixels(5.0f)};
-	private static final float dashLong[] = {
-		UtilsGarminImg.getDpPixels(10.0f), UtilsGarminImg.getDpPixels(10.0f)};
-	private static final float dashPowerline[] = {
-		UtilsGarminImg.getDpPixels(2.0f), UtilsGarminImg.getDpPixels(10.0f)};
+    /**************************************************/
+
+    private static final float[] dashDots = {
+            UtilsGarminImg.getDpPixels(3.0f), UtilsGarminImg.getDpPixels(3.0f)};
+    private static final float[] dashTiny = {
+            UtilsGarminImg.getDpPixels(5.0f), UtilsGarminImg.getDpPixels(2.0f)};
+    private static final float[] dashSmall = {
+            UtilsGarminImg.getDpPixels(5.0f), UtilsGarminImg.getDpPixels(5.0f)};
+    private static final float[] dashLong = {
+            UtilsGarminImg.getDpPixels(10.0f), UtilsGarminImg.getDpPixels(10.0f)};
+    private static final float[] dashPowerline = {
+            UtilsGarminImg.getDpPixels(2.0f), UtilsGarminImg.getDpPixels(10.0f)};
 	
 	// DEFINITIONS
 
