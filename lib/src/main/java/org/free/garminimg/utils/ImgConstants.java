@@ -125,7 +125,7 @@ public class ImgConstants {
     /**************************************************/
 
     // instance of style
-    private static StyleInternal style = StyleInternal.getInstance();
+    private static final StyleInternal style = StyleInternal.getInstance();
 
     // GET POINT
 
@@ -180,7 +180,7 @@ public class ImgConstants {
         // ID of current item (type from img file)
         private int type;
         // description, sometimes name, sometimes label
-        private String description;
+        private final String description;
         // priority in draw
         private int priority;
 
@@ -249,11 +249,11 @@ public class ImgConstants {
 
     public static class PointDrawSpec extends DrawSpecification {
 
-        private static SparseArrayCompat<WeakReference<Bitmap>> cacheBitmaps = new SparseArrayCompat<>();
+        private static final SparseArrayCompat<WeakReference<Bitmap>> cacheBitmaps = new SparseArrayCompat<>();
 
-        private int subType;
+        private final int subType;
 
-        private int fullType;
+        private final int fullType;
 
         private String iconName;
 
@@ -261,7 +261,7 @@ public class ImgConstants {
 
         private int[][] iconColors;
 
-        private boolean point;
+        private final boolean point;
 
         public PointDrawSpec(int fullType, String description, String iconName,
                 boolean point, int priority) {
@@ -328,7 +328,7 @@ public class ImgConstants {
 
     public static class LinePolyDrawSpec extends DrawSpecification {
 
-        private LinePolyPainter painter;
+        private final LinePolyPainter painter;
 
         public LinePolyPainter getPainter() {
 

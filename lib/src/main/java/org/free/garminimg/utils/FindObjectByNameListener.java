@@ -38,7 +38,7 @@ public class FindObjectByNameListener implements MapListener {
 	
 	private final List<FoundObject> founds = new ArrayList<FoundObject>();
 
-	private Matcher matcher;
+	private final Matcher matcher;
 
 	/**
 	 * Will use a regular expression.

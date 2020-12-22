@@ -13,9 +13,9 @@ public class LinePainterDouble extends LinePolyPainter {
 	public static final float STROKE_BG = UtilsGarminImg.getDpPixels(2.0f);
 	
 	// main paint object
-	private Paint paintFill;
+	private final Paint paintFill;
 	// paint for background
-	private Paint paintBg;
+	private final Paint paintBg;
 
 	public LinePainterDouble(Paint paint, int colorFill, int colorBg) {
 		super();

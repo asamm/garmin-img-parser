@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
+import java.nio.charset.StandardCharsets;
 
 /**
  * A sub-file with .lbl extension.
@@ -158,7 +159,7 @@ class LblSubFile extends ImgSubFile {
 		if (codepage == 0 || codepage == 850)
 			charset = Charset.forName("cp1252");
 		else if (codepage == 65001)
-			charset = Charset.forName("UTF-8");
+			charset = StandardCharsets.UTF_8;
 		else if (codepage == 932)
 			charset = Charset.forName("ms932");
 		else if (codepage == 950)

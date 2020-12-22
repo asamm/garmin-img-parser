@@ -37,9 +37,9 @@ import org.free.garminimg.CoordUtils;
  */
 public class MapTransformer<T> implements Cloneable {
 	
-	private static double MinSize = 1.0 / 3600.0;
+	private static final double MinSize = 1.0 / 3600.0;
 
-	private int margin;
+	private final int margin;
 
 	private double minX;
 
@@ -53,7 +53,7 @@ public class MapTransformer<T> implements Cloneable {
 
 	private int width;
 
-	private Converter<T> converter;
+	private final Converter<T> converter;
 
 	public MapTransformer(Converter<T> converter, int margin) {
 		super();

@@ -39,9 +39,9 @@ class ProductFile {
 
 	private String productType;
 
-	private Map<Integer, Area> areaTable = new HashMap<Integer, Area>();
+	private final Map<Integer, Area> areaTable = new HashMap<Integer, Area>();
 
-	private Map<Integer, MapDesc> maps = new HashMap<Integer, MapDesc>();
+	private final Map<Integer, MapDesc> maps = new HashMap<Integer, MapDesc>();
 
 	public ProductFile(File file) throws IOException {
 		FileInputStream tdbStream = new FileInputStream(file);
@@ -201,17 +201,17 @@ class ProductFile {
 	}
 
 	public class Area {
-		private int number;
+		private final int number;
 
-		private String name;
+		private final String name;
 
-		private int coordN;
+		private final int coordN;
 
-		private int coordW;
+		private final int coordW;
 
-		private int coordS;
+		private final int coordS;
 
-		private int coordE;
+		private final int coordE;
 
 		public Area(int number, String name, int coordN, int coordW,
 				int coordS, int coordE) {
@@ -249,19 +249,19 @@ class ProductFile {
 	}
 
 	public class MapDesc {
-		private int imgNumber;
+		private final int imgNumber;
 
-		private String name;
+		private final String name;
 
-		private Area area;
+		private final Area area;
 
-		private int coordN;
+		private final int coordN;
 
-		private int coordW;
+		private final int coordW;
 
-		private int coordS;
+		private final int coordS;
 
-		private int coordE;
+		private final int coordE;
 
 		public MapDesc(int imgNumber, String name, Area area, int coordN,
 				int coordW, int coordS, int coordE) {

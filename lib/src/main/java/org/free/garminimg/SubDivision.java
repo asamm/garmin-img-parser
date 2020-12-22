@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class SubDivision {
 	
-	private int level;
+	private final int level;
 
 	private long dataOffset;
 
@@ -59,11 +59,11 @@ public class SubDivision {
 
 	private int indexNextLevel;
 
-	private List<SubDivision> subDivisions = new ArrayList<SubDivision>();
+	private final List<SubDivision> subDivisions = new ArrayList<SubDivision>();
 
-	private int index;
+	private final int index;
 
-	private TreSubFile subFile;
+	private final TreSubFile subFile;
 
 	public SubDivision(int index, int level, TreSubFile subFile) {
 		this.index = index;

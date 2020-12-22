@@ -663,7 +663,7 @@ class RgnSubFile extends ImgSubFile {
 
 		private long segmentEnd;
 
-		private int type;
+		private final int type;
 
 		public Segment(int type) {
 			this.type = type;

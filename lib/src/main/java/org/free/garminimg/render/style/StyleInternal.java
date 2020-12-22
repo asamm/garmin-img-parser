@@ -73,9 +73,9 @@ public class StyleInternal {
 	
 	// CONTAINERS
 	
-	private Map<Integer, PointDrawSpec> POINT_TYPES = new Hashtable<>();
-	private Map<Integer, LinePolyDrawSpec> LINE_TYPES = new Hashtable<>();
-	private Map<Integer, LinePolyDrawSpec> POLYGON_TYPES = new Hashtable<>();
+	private final Map<Integer, PointDrawSpec> POINT_TYPES = new Hashtable<>();
+	private final Map<Integer, LinePolyDrawSpec> LINE_TYPES = new Hashtable<>();
+	private final Map<Integer, LinePolyDrawSpec> POLYGON_TYPES = new Hashtable<>();
 	
 	// COLORS
 	
@@ -1043,7 +1043,7 @@ public class StyleInternal {
 			result.setDrawLabel(DrawLabel.NEVER);
 			break;
 		case 0x10e06:
-			result = finishLineSpec(type, 30, "\'Blind\' street",
+			result = finishLineSpec(type, 30, "'Blind' street",
 					2.0f, dashSmall, Color.parseColor("#83122F"));
 			result.setDrawLabel(DrawLabel.NEVER);
 			break;

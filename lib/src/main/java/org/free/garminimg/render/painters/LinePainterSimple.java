@@ -9,9 +9,9 @@ import android.graphics.Path;
 public class LinePainterSimple extends LinePolyPainter {
 
 	// main paint object
-	private Paint paint;
+	private final Paint paint;
 	// defined color
-	private int color;
+	private final int color;
 
 	public LinePainterSimple(Paint paint) {
 		this(paint, paint.getColor());

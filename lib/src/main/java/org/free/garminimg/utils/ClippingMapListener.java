@@ -30,13 +30,13 @@ import org.free.garminimg.SubDivision;
  */
 public class ClippingMapListener implements TransformedMapListener {
 
-	private int minX;
+	private final int minX;
 
-	private int maxX;
+	private final int maxX;
 
-	private int minY;
+	private final int minY;
 
-	private int maxY;
+	private final int maxY;
 
 	private final TransformedMapListener next;
 
@@ -247,13 +247,13 @@ public class ClippingMapListener implements TransformedMapListener {
 		}
 	}
 
-	private static int TOP = 0x1;
+	private static final int TOP = 0x1;
 
-	private static int BOTTOM = 0x2;
+	private static final int BOTTOM = 0x2;
 
-	private static int LEFT = 0x4;
+	private static final int LEFT = 0x4;
 
-	private static int RIGHT = 0x8;
+	private static final int RIGHT = 0x8;
 
 	private int getLocation(int x, int y) {
 		int code = 0;

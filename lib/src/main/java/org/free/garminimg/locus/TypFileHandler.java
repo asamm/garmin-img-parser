@@ -17,9 +17,9 @@ public class TypFileHandler {
 	private static final String TAG = TypFileHandler.class.getSimpleName();
 	
 	// path to existing TYP file
-	private File file;
+	private final File file;
 	// raw file data
-	private byte[] data;
+	private final byte[] data;
 	
 	public TypFileHandler(File file) throws IOException {
 		this.file = file;

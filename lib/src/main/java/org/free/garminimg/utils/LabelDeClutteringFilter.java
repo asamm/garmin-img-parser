@@ -38,21 +38,22 @@ import java.util.TreeSet;
  */
 public class LabelDeClutteringFilter {
 
-	private Paint paint = new Paint();
-	private Paint paintRect = new Paint();
+	private final Paint paint = new Paint();
+	private final Paint paintRect = new Paint();
 
-	private Canvas g2;
+	private final Canvas g2;
 
-	private int frontColor;
+	private final int frontColor;
 
-	private int labelBackgroundColor, lineBackgroundColor,
-			polygonBackgroundColor;
+	private final int labelBackgroundColor;
+    private final int lineBackgroundColor;
+    private final int polygonBackgroundColor;
 
-	private SortedSet<LabelInfo> everyLabels = new TreeSet<LabelInfo>();
+	private final SortedSet<LabelInfo> everyLabels = new TreeSet<LabelInfo>();
 
-	private SortedSet<String> knownNames = new TreeSet<String>();
+	private final SortedSet<String> knownNames = new TreeSet<String>();
 
-	private ArrayList<LabelInfo> toPaintLabels = new ArrayList<LabelInfo>();
+	private final ArrayList<LabelInfo> toPaintLabels = new ArrayList<LabelInfo>();
 
 	private static final int MARGIN_X = 5;
 
@@ -163,21 +164,21 @@ public class LabelDeClutteringFilter {
 	}
 
 	private class LabelInfo implements Comparable<LabelInfo> {
-		private String name;
+		private final String name;
 
-		private RectF bounds;
+		private final RectF bounds;
 
 		private int x;
 
 		private int y;
 
-		private Placement placement;
+		private final Placement placement;
 
-		private boolean firstInstance;
+		private final boolean firstInstance;
 
-		private int priority;
+		private final int priority;
 
-		private int backColor;
+		private final int backColor;
 
 		public LabelInfo(String name2, Rect bounds2, int x2, int y2,
 				int priority2, boolean firstInstance2, Placement placement2,
@@ -279,7 +280,7 @@ public class LabelDeClutteringFilter {
 	public static final int ROAD_LABEL_BACKGROUND = Color.argb(220, 160, 255,
 			255);
 
-	private Rect textBounds = new Rect();
+	private final Rect textBounds = new Rect();
 	
 	private void addLabel(int x, int y, Label label, Placement placement,
 			int priority, int backColor) {

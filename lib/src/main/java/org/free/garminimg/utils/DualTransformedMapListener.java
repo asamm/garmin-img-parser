@@ -28,9 +28,9 @@ import org.free.garminimg.SubDivision;
  */
 public class DualTransformedMapListener implements TransformedMapListener {
 	
-	private TransformedMapListener listener1;
+	private final TransformedMapListener listener1;
 
-	private TransformedMapListener listener2;
+	private final TransformedMapListener listener2;
 
 	public DualTransformedMapListener(TransformedMapListener listener1,
 			TransformedMapListener listener2) {

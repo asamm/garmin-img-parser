@@ -23,13 +23,13 @@ import org.free.garminimg.Label;
 
 public class FoundPoint extends FoundObject {
 	
-	private int subType;
+	private final int subType;
 
-	private int longitude;
+	private final int longitude;
 
-	private int latitude;
+	private final int latitude;
 
-	private boolean indexed;
+	private final boolean indexed;
 
 	public FoundPoint(int type, int subType, int longitude, int latitude,
 			Label label, boolean indexed) {

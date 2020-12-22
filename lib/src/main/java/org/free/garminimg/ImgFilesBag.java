@@ -45,9 +45,9 @@ public class ImgFilesBag {
 	 * <p>
 	 * Every usages must be synchronised manually.
 	 */
-	private List<ImgFileBag> openFiles = new ArrayList<>();
+	private final List<ImgFileBag> openFiles = new ArrayList<>();
 
-	private SortedSet<ImgFileBag> mapFiles = Collections
+	private final SortedSet<ImgFileBag> mapFiles = Collections
 			.synchronizedSortedSet(new TreeSet<>(new FileComparator()));
 
 	private int maxLat = Integer.MIN_VALUE, maxLon = Integer.MIN_VALUE,

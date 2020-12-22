@@ -27,7 +27,7 @@ import java.io.RandomAccessFile;
  * Handle the "decryption" of a .img file.
  */
 class ImgFileInputStream {
-	private RandomAccessFile file;
+	private final RandomAccessFile file;
 
 	private int xor;
 

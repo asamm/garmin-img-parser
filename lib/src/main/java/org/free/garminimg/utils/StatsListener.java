@@ -30,7 +30,7 @@ import org.free.garminimg.SubDivision;
  */
 public class StatsListener implements TransformedMapListener {
 	
-	private TransformedMapListener drawer;
+	private final TransformedMapListener drawer;
 
 	private int nbPoints;
 

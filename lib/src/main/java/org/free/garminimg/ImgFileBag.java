@@ -36,7 +36,7 @@ public class ImgFileBag {
 	public static final int IMG_B = 2;
 	public static final int IMG_R = 3;
 
-	private File file;
+	private final File file;
 
 	private String mapCode;
 
@@ -45,7 +45,7 @@ public class ImgFileBag {
 	private RgnSubFile rgn;
 	private TreSubFile tre;
 
-	private ArrayList<ImgSubFile> otherSubFiles = new ArrayList<ImgSubFile>(1);
+	private final ArrayList<ImgSubFile> otherSubFiles = new ArrayList<ImgSubFile>(1);
 
 	private String description;
 
@@ -53,7 +53,7 @@ public class ImgFileBag {
 
 	private boolean inputLocked;
 
-	private ImgFilesBag parent;
+	private final ImgFilesBag parent;
 
 	private boolean initBoundariesDone;
 
@@ -61,7 +61,7 @@ public class ImgFileBag {
 	 * Keep a cache of used blocs. Simple implementation, there is room for
 	 * improvement...
 	 */
-	private HashMap<Long, WeakReference<byte[]>> blocCache = new HashMap<Long, WeakReference<byte[]>>();
+	private final HashMap<Long, WeakReference<byte[]>> blocCache = new HashMap<Long, WeakReference<byte[]>>();
 
 	private int northBoundary;
 

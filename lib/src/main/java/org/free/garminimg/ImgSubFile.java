@@ -33,13 +33,13 @@ public abstract class ImgSubFile {
 
 	protected ImgFileBag fileBag;
 
-	private String filename;
+	private final String filename;
 
-	private String filetype;
+	private final String filetype;
 
-	private int fileSize;
+	private final int fileSize;
 
-	private long blocSize;
+	private final long blocSize;
 
 	private int firstBloc;
 

@@ -15,7 +15,7 @@ public class PolyPainterSimple extends LinePolyPainter {
 	private Paint paintFill;
 
 	// flag to draw border
-	private boolean drawBorder;
+	private final boolean drawBorder;
 	// main paint object
 	private Paint paintBorder;
 	

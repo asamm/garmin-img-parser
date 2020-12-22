@@ -23,9 +23,9 @@ import org.free.garminimg.Label;
 
 public abstract class FoundObject {
 	
-	private Label label;
+	private final Label label;
 
-	private int type;
+	private final int type;
 
 	public FoundObject(int type, Label label) {
 		this.label = label;

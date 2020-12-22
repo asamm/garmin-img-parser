@@ -28,15 +28,15 @@ import java.util.List;
 import android.util.Log;
 
 public class ImgFileBagExtractor {
-	private File file;
+	private final File file;
 
 	private static final int FAT_BLOC_SIZE = 512;
 
 	private ImgFileInputStream inputPrivate;
 
-	private ImgFilesBag parent;
+	private final ImgFilesBag parent;
 
-	private SubFileReader subFileReader;
+	private final SubFileReader subFileReader;
 
 	ImgFileBagExtractor(File file, ImgFilesBag parent,
 			SubFileReader subFileReader) throws IOException {

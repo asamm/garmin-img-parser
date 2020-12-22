@@ -107,24 +107,24 @@ public class MapDrawer implements TransformedMapListener {
 		}
 	}
 
-	private PriorityQueue<PointQueueData> queuePoints = 
+	private final PriorityQueue<PointQueueData> queuePoints =
 			new PriorityQueue<PointQueueData>();
-	private PriorityQueue<LinePolyQueueData> queuePolygons = 
+	private final PriorityQueue<LinePolyQueueData> queuePolygons =
 			new PriorityQueue<LinePolyQueueData>();
-	private PriorityQueue<LinePolyQueueData> queueLines = 
+	private final PriorityQueue<LinePolyQueueData> queueLines =
 			new PriorityQueue<LinePolyQueueData>();
 
 	// PRIVATE PART
 
-	private Paint pointPaint = new Paint(Paint.FILTER_BITMAP_FLAG);
+	private final Paint pointPaint = new Paint(Paint.FILTER_BITMAP_FLAG);
 	// current canvas object
-	private Canvas canvas;
+	private final Canvas canvas;
 	// current map zoom level
-	private int zoomLevel;
+	private final int zoomLevel;
 	// method used for global labels
-	private LabelDeClutteringFilter labelFilter;
+	private final LabelDeClutteringFilter labelFilter;
 	// current map configuration
-	private MapConfig mapConfig;
+	private final MapConfig mapConfig;
 
 	public MapDrawer(MapConfig config, Canvas g2, int zoomLevel,
 			float fontSize, int frontColor, int backColor, float dips) {

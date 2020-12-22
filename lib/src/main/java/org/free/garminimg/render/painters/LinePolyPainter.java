@@ -11,10 +11,10 @@ import android.graphics.Path;
 public abstract class LinePolyPainter {
 
 	// existing path object
-	private Path path;
+	private final Path path;
 	// zoom level limits
-	private int zoomMinItem;
-	private int zoomMaxItem;
+	private final int zoomMinItem;
+	private final int zoomMaxItem;
 	
 	// flag if painter draw background area
 	private boolean isBackground;

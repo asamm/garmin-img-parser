@@ -27,17 +27,17 @@ import org.free.garminimg.*;
  */
 public class CoordinateConverterListener<COORD> implements MapListener {
 	
-	private MapTransformer<COORD> transformer;
+	private final MapTransformer<COORD> transformer;
 
-	private TransformedMapListener listener;
+	private final TransformedMapListener listener;
 
 	private int[] xPoints = new int[50];
 
 	private int[] yPoints = new int[50];
 
-	private Point2D.Double tempXY = new Point2D.Double();
+	private final Point2D.Double tempXY = new Point2D.Double();
 
-	private COORD tempCoord;
+	private final COORD tempCoord;
 
 	public CoordinateConverterListener(MapTransformer<COORD> transformer,
 			TransformedMapListener listener) {

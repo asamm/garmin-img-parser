@@ -21,13 +21,13 @@ package org.free.garminimg;
 
 public class IndexedPOILabel extends POILabel implements IndexedLabel {
 	
-	private int type;
+	private final int type;
 
-	private int subType;
+	private final int subType;
 
-	private int latitude;
+	private final int latitude;
 
-	private int longitude;
+	private final int longitude;
 
 	public IndexedPOILabel(ImgFileBag file, int labelOffset, int type,
 			int subType, int longitude, int latitude) {
