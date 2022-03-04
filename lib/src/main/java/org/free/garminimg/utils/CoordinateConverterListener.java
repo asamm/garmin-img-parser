@@ -19,7 +19,11 @@
  */
 package org.free.garminimg.utils;
 
-import org.free.garminimg.*;
+import org.free.garminimg.CoordUtils;
+import org.free.garminimg.ImgFileBag;
+import org.free.garminimg.Label;
+import org.free.garminimg.MapListener;
+import org.free.garminimg.SubDivision;
 
 /**
  * Does the bridge between a map listener that works in Garmin coordinates and a

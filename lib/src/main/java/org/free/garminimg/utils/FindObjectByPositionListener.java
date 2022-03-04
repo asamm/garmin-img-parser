@@ -19,11 +19,15 @@
  */
 package org.free.garminimg.utils;
 
-import org.free.garminimg.*;
-
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.graphics.Region;
+
+import org.free.garminimg.CoordUtils;
+import org.free.garminimg.ImgFileBag;
+import org.free.garminimg.Label;
+import org.free.garminimg.MapListener;
+import org.free.garminimg.SubDivision;
 
 import java.util.ArrayList;
 import java.util.List;

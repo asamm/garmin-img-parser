@@ -19,9 +19,9 @@
  */
 package org.free.garminimg;
 
-import java.io.IOException;
-
 import android.util.Log;
+
+import java.io.IOException;
 
 /**
  * Base class for a label.

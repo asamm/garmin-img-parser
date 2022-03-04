@@ -1,10 +1,10 @@
 package org.free.garminimg.render.painters;
 
-import org.free.garminimg.utils.ImgConstants.PainterStep;
-
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
+
+import org.free.garminimg.utils.ImgConstants.PainterStep;
 
 public class LinePainterSimple extends LinePolyPainter {
 

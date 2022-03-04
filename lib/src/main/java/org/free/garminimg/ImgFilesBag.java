@@ -20,9 +20,16 @@
 package org.free.garminimg;
 
 import org.free.garminimg.utils.ImgConstants;
+
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.BitSet;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  * The main entry point of the library. Manages the list of .img mapFiles.

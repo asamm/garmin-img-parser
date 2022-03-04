@@ -19,14 +19,14 @@
  */
 package org.free.garminimg.utils;
 
-import org.free.garminimg.Label;
-import org.free.garminimg.UtilsGarminImg;
-
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
+
+import org.free.garminimg.Label;
+import org.free.garminimg.UtilsGarminImg;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,6 +1,7 @@
 package org.free.garminimg.locus;
 
-import java.io.IOException;
+import android.graphics.Canvas;
+import android.graphics.Color;
 
 import org.free.garminimg.ImgFilesBag;
 import org.free.garminimg.ObjectKind;
@@ -13,8 +14,7 @@ import org.free.garminimg.utils.MapTransformer;
 import org.free.garminimg.utils.Rectangle;
 import org.free.garminimg.utils.StatsListener;
 
-import android.graphics.Canvas;
-import android.graphics.Color;
+import java.io.IOException;
 
 public class MapTileGenerator<T> {
 

@@ -1,8 +1,8 @@
 package org.free.garminimg.render.painters;
 
-import org.free.garminimg.UtilsGarminImg;
-
 import android.graphics.Path;
+
+import org.free.garminimg.UtilsGarminImg;
 
 public class UtilsRender {
 

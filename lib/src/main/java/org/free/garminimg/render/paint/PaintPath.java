@@ -19,11 +19,11 @@
  */
 package org.free.garminimg.render.paint;
 
-import org.free.garminimg.UtilsGarminImg;
-
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathDashPathEffect;
+
+import org.free.garminimg.UtilsGarminImg;
 
 /**
  * Used to draw train rails.

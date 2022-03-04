@@ -20,7 +20,9 @@
 package org.free.garminimg;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.BitSet;
+import java.util.List;
 
 /**
  * A sub-file with .tre extension. Contains the information about the

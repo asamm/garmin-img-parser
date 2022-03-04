@@ -19,13 +19,13 @@
  */
 package org.free.garminimg;
 
+import android.util.Log;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import android.util.Log;
 
 public class ImgFileBagExtractor {
 	private final File file;

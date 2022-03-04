@@ -1,10 +1,10 @@
 package org.free.garminimg.render.paint;
 
-import org.free.garminimg.UtilsGarminImg;
-
 import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.graphics.PathEffect;
+
+import org.free.garminimg.UtilsGarminImg;
 
 public class BasicStroke extends Paint {
 

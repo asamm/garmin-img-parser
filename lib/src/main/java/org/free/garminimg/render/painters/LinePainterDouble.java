@@ -1,12 +1,12 @@
 package org.free.garminimg.render.painters;
 
-import org.free.garminimg.UtilsGarminImg;
-import org.free.garminimg.utils.ImgConstants.PainterStep;
-
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+
+import org.free.garminimg.UtilsGarminImg;
+import org.free.garminimg.utils.ImgConstants.PainterStep;
 
 public class LinePainterDouble extends LinePolyPainter {
 	

@@ -19,9 +19,9 @@
  */
 package org.free.garminimg;
 
-import org.free.garminimg.utils.ImgConstants;
-
 import android.util.Log;
+
+import org.free.garminimg.utils.ImgConstants;
 
 import java.io.EOFException;
 import java.io.IOException;
