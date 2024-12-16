@@ -19,6 +19,7 @@
  */
 package org.free.garminimg.utils;
 
+import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -344,7 +345,8 @@ public class MapDrawer implements TransformedMapListener {
 		queuePoints.clear();
 	}
 
-	private LinePolyQueueData[] convertToArray(
+	@SuppressLint("SuspiciousIndentation")
+    private LinePolyQueueData[] convertToArray(
 			PriorityQueue<LinePolyQueueData> queue) {
 		LinePolyQueueData[] lines = new LinePolyQueueData[queue.size()];
 		int index = 0;
