@@ -31,5 +31,8 @@ android {
 dependencies {
     // Timber
     // https://github.com/JakeWharton/timber
-    compileOnly 'com.jakewharton.timber:timber:5.0.1'
+    // Bumped from compileOnly to implementation: locus-core's libLogger no longer carries
+    // Timber transitively (uses native ILogger sinks). libGarminImg is scheduled for
+    // replacement; drop together with the module.
+    implementation 'com.jakewharton.timber:timber:5.0.1'
 }
